@@ -1,13 +1,15 @@
 .wrapper {
   margin: 80px;
 }
+
 .invalid {
-  border: 1px solid red;
+  border-color: #ff0000;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
-.form-group input {
-  outline: none;
-  box-shadow: none;
+.invalid:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
 .form-signin {

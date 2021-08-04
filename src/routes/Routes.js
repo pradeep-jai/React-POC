@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginPage from "../components/LoginPage/LoginPage";
-import DashboardRoutes from "./DashboardRoutes";
+import dashboardroutes from "./dashboardroutes";
 
 /* Lazy Loading Routes */
 const NotFoundPage = lazy(() =>
@@ -12,7 +12,7 @@ const routes = (
   <BrowserRouter>
     <Suspense fallback={<div>Loading ....</div>}>
       <Switch>
-        {DashboardRoutes}
+        {dashboardroutes}
         <Route path="/" component={LoginPage} exact />
         <Route path="*" component={NotFoundPage} />
       </Switch>
