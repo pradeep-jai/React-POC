@@ -54,7 +54,6 @@ const LoginPage = (props) => {
   const onPassHandleChange = (e) => {
     setPassword(e.target.value);
     const errObj = { ...errors };
-
     if ((password && password.length >= 1) || password.length === 0) {
       errObj.password = "Password needs to be 6 charactors or more";
       if (password.length >= 6) {
